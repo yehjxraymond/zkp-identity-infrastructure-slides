@@ -1,0 +1,207 @@
+import { dark, syntaxHighlighterPrism } from "@mdx-deck/themes";
+import { Box } from "theme-ui";
+
+export const theme = {
+  ...syntaxHighlighterPrism,
+  ...dark,
+};
+
+export const Highlighted = ({ children }) => (
+  <Box color="tomato" style={{ display: "inline-block" }}>
+    {children}
+  </Box>
+);
+
+# ZKP Identity Infrastructure
+
+Reimagining the future of identity infrastructures
+
+---
+
+## \$ whoami
+
+<Steps>
+
+- Raymond Yeh
+- Author @ geek.sg
+- Software Developer @ GovTech
+- Fellow @ RadicalXChange
+- Verifiable Credentials, Identity, Blockchain, Zero-knowledge Proof
+
+</Steps>
+
+---
+
+## Introduction to ZKP
+
+(5 min)
+
+---
+
+## The cave with magic door
+
+<img src="/assets/cave.png" style={{ height: "60%" }} />
+
+---
+
+## zk-SNARK
+
+<Steps>
+
+- <Highlighted>Zero-knowledge</Highlighted> - Does not reveal information beyond validity of statement itself
+- <Highlighted>Succinct</Highlighted> - Proofs are small and verified quickly, even for huge programs
+- <Highlighted>Non-interactive</Highlighted> - Proof is a single message sent from prover to verifier
+- <Highlighted>Argument of Knowledge</Highlighted> - Argument that prover knows of certain secrets 
+
+</Steps>
+
+---
+
+## Building apps with ZKP
+
+(5 min)
+
+---
+
+## Thinking in Circuits
+
+<img src="/assets/circuit.png" style={{ height: "60%" }} />
+
+---
+
+## Sample Use Case
+
+An identity card to prove that one is above certain age without revealing the actual age.
+
+---
+
+## Age Check
+
+<img src="/assets/simple-age.png" style={{ height: "60%" }} />
+
+I know of an age that is legal to buy alcohol in Singapore?
+
+--- 
+
+## Age Check
+
+<img src="/assets/complete-age.png" style={{ height: "60%" }} />
+
+I know of a secret that proves that I'm a citizen of Singapore with an age above 18.
+
+---
+
+## Introduction to Semaphore
+
+(5 min)
+
+---
+
+## Semaphore
+
+<Steps>
+
+- Users to prove membership of a set without revealing original identity
+- Users to signal endorsement of an arbitrary string
+- Mechanism to prevent double-signalling/double-spending
+
+</Steps>
+
+https://semaphore.appliedzkp.org/
+
+---
+
+## In Action
+
+<img src="/assets/semaphore-example.png" style={{ height: "60%" }} />
+
+---
+
+## State
+
+<img src="/assets/semaphore-externals.png" style={{ height: "60%" }} />
+
+---
+
+## Circuit
+
+<img src="/assets/semaphore-circuit.png" style={{ height: "60%" }} />
+
+---
+
+## Use Cases of Semaphore
+
+(5 min)
+
+---
+
+## Financial Assistance
+
+<img src="/assets/uc-food.png" style={{ height: "60%" }} />
+
+---
+
+## Goods Rationing / Distribution
+
+<img src="/assets/uc-mask.png" style={{ height: "60%" }} />
+
+---
+
+## Fraud Prevention
+
+<img src="/assets/uc-fraud.png" style={{ height: "60%" }} />
+
+---
+
+## Voting
+
+<img src="/assets/uc-vote.png" style={{ height: "60%" }} />
+
+---
+
+## Whistleblowing
+
+<img src="/assets/uc-whistleblowing.png" style={{ height: "60%" }} />
+
+---
+
+## Membership Benefits
+
+<img src="/assets/uc-credit-card.png" style={{ height: "60%" }} />
+
+---
+
+## Student Benefits
+
+<img src="/assets/uc-student.png" style={{ height: "60%" }} />
+
+---
+
+## VeilOS Demo
+
+(5 min)
+
+---
+
+## Q&A
+
+(15 min)
+
+---
+
+## Additional Resources
+
+- [How to Explain Zero-Knowledge Protocols to Your Children](https://link.springer.com/content/pdf/10.1007%2F0-387-34805-0_60.pdf)
+- [What are zk-SNARKs](https://z.cash/technology/zksnarks/)
+- [Quadratic Arithmetic Programs: from Zero to Hero](https://medium.com/@VitalikButerin/quadratic-arithmetic-programs-from-zero-to-hero-f6d558cea649)
+- [ZKProof Community Reference](https://docs.zkproof.org/reference.pdf)
+- [Semaphore](https://semaphore.appliedzkp.org/)
+
+---
+
+## END
+
+- Slides: zkp-id.decks.geek.sg
+- Blog: geek.sg
+- Twitter: @geek_sg
+- LinkedIn: linkedin.com/in/raymondyeh
